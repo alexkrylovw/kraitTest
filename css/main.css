@@ -49,7 +49,9 @@ h1 {
 }
 .top-section-menu ul #header-download-link {
   background-color: #fff;
-  padding: 11px 30px;
+  width: 153px;
+  height: 38px;
+  padding-left: 30px;
   border-radius: 50px;
 }
 .top-section-menu ul #header-download-link a {
@@ -90,10 +92,11 @@ h1 {
 }
 .top-section div.container #top-section-button {
   width: 202px;
-  height: 56px;
+  height: 50px;
+  padding-left: 40px;
+  padding-top: 10px;
   margin-top: 35px;
   margin-bottom: 214px;
-  padding: 13px 38px;
   background-color: #fff;
   border-radius: 50px;
   border: #e2612b solid 6px;
@@ -139,4 +142,48 @@ h1 {
   color: #f7fafc;
   background-color: #f7fafc;
   border: none;
+}
+
+/*features-2-section building */
+.features-2-section {
+  position: relative;
+  padding-top: 120px;
+}
+.features-2-section img {
+  position: absolute;
+  top: -56px;
+  left: 8px;
+}
+.features-2-section h1 {
+  margin-bottom: 12px;
+  font-size: 2.6em;
+  font-family: "dosis", sans-serif;
+  font-weight: 500;
+}
+.features-2-section p {
+  font-weight: 300;
+}
+.features-2-section #second-p {
+  margin-top: 80px;
+}
+.features-2-section #features-2-section-list {
+  margin-top: 25px;
+  list-style-position: inside;
+  list-style-type: none;
+}
+.features-2-section #features-2-section-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*initializing additional flex elements for custom list bullets (list-style-image don't looks cool) */
+}
+.features-2-section #features-2-section-list li .custom-bullet {
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+  background-image: url("../img/icons/list-markers/marker2.png");
 }
