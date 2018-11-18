@@ -1,0 +1,105 @@
+@import "colors"
+@import "mixins"
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    font-size: 14px
+    
+body
+    background-color: $white
+    color: $darkgrey
+    font-family: 'Roboto', sans-serif
+
+/*line-height correcting*/
+p
+    line-height: 24px               
+h1
+    line-height: 60px
+    
+/*top section building */   
+.top-section
+    color: $white
+    @include linear-gradient-default
+    header.container
+        padding-top: 30px
+    &-menu ul
+        list-style: none
+        display: flex
+        li
+            margin-right: 50px
+            padding: 11px 0
+            a
+                color: $white
+                text-decoration: none
+        #header-download-link
+                    background-color: $white
+                    padding: 11px 30px
+                    border-radius: 50px
+                    a
+                        color: $darkgrey
+                        font-weight: 500
+    div.container
+        margin-top: 145px
+        h1
+            font-size: 3.9em
+            font-family: 'dosis', sans-serif
+        p
+            margin-top: 25px
+            font-weight: 300
+        #top-section-list
+            margin-top: 25px
+            list-style-position: inside 
+            list-style-type: none
+            li
+                display: flex
+                margin-bottom: 16px
+                align-items: center
+                /*initializing additional flex elements for custom list bullets (list-style-image don't looks cool)*/
+                .custom-bullet             
+                    width: 15px
+                    height: 15px
+                    margin-right: 20px
+                    background-image: url('../img/icons/list-markers/marker1.png')              
+        #top-section-button
+            width: 202px
+            height: 56px
+            margin-top: 35px
+            margin-bottom: 214px
+            padding: 13px 38px
+            background-color: $white
+            border-radius: 50px
+            border: #e2612b solid 6px
+            a
+                color: $darkgrey
+                font-weight: 500
+                text-decoration: none
+    /*!!!dynamic size changing on media query needed!!!*/
+    #iphones-1
+        position: absolute
+        top: 150px
+        right: 0px
+        
+
+/*features-1-section building*/
+.features-1-section
+    padding-top: 120px
+    .feature
+        display: flex
+        align-items: center
+        .feature-logo
+            margin-top: 15px
+            margin-right: 18px
+        h1
+            font-size: 1.7em
+            font-family: 'dosis', sans-serif
+            font-weight: 500
+        p
+            font-weight: 300
+    hr
+        margin-top: 122px
+        height: 2px
+        color: $lightgrey
+        background-color: $lightgrey
+        border: none

@@ -1,0 +1,10 @@
+@mixin linear-gradient-default
+    background: $body-bg-gradient-pink
+    background: -moz-linear-gradient(left, $body-bg-gradient-orange 0%, $body-bg-gradient-pink 100%)
+    background: -webkit-gradient(linear, left, right, color-stop(0%,$body-bg-gradient-orange), color-stop(100%,$body-bg-gradient-pink))
+    background: -webkit-linear-gradient(left, $body-bg-gradient-orange 0%,$body-bg-gradient-pink 100%)
+    background: -o-linear-gradient(left, $body-bg-gradient-orange 0%,$body-bg-gradient-pink 100%)
+    background: linear-gradient(to right, $body-bg-gradient-orange 0%,$body-bg-gradient-pink 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#{$body-bg-gradient-orange}, endColorstr=#{$body-bg-gradient-pink})
+
+
