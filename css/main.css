@@ -148,6 +148,7 @@ h1 {
 .features-2-section {
   position: relative;
   padding-top: 120px;
+  padding-bottom: 180px;
 }
 .features-2-section img {
   position: absolute;
@@ -186,4 +187,41 @@ h1 {
   height: 15px;
   margin-right: 20px;
   background-image: url("../img/icons/list-markers/marker2.png");
+}
+
+/*footer building */
+footer {
+  color: #fff;
+  background-color: #222;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #f31f79;
+}
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 60px;
+  padding-bottom: 32px;
+  list-style: none;
+}
+footer ul li {
+  margin-right: 30px;
+}
+footer ul li i {
+  font-size: 1.2em;
+}
+footer p {
+  padding-bottom: 60px;
+  margin-right: 25px;
 }
