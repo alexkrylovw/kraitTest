@@ -1,11 +1,11 @@
 @import "colors"
 @import "mixins"
-
+@import "sizes"
 *
     box-sizing: border-box
     padding: 0
     margin: 0
-    font-size: 14px
+    font-size: $default
     
 body
     background-color: $white
@@ -42,7 +42,7 @@ h1
     div.container
         margin-top: 145px
         h1
-            font-size: 3.9em
+            font-size: $giant
             font-family: 'dosis', sans-serif
         p
             margin-top: 25px
@@ -89,12 +89,14 @@ h1
         .feature-logo
             margin-top: 15px
             margin-right: 18px
-        h1
-            font-size: 1.7em
+        h3
+            margin-bottom: 10px
+            font-size: $big
             font-family: 'dosis', sans-serif
             font-weight: 500
         p
             font-weight: 300
+            color: $mediumgrey
     hr
         margin-top: 122px
         height: 2px
@@ -111,13 +113,14 @@ h1
         position: absolute
         top: -56px
         left: 8px
-    h1
+    h2
         margin-bottom: 12px
-        font-size: 2.6em
+        font-size: $bigger
         font-family: 'dosis', sans-serif
         font-weight: 500
     p
         font-weight: 300
+        color: $mediumgrey
     #second-p
         margin-top: 80px
     #features-2-section-list
@@ -136,8 +139,89 @@ h1
                     background-image: url('../img/icons/list-markers/marker2.png')
 
 
-    
-    
+/*pricing section building*/
+.pricing-section
+    .first
+        margin-top: 120px
+        h2
+            font-size: $bigger
+            font-family: 'dosis', sans-serif
+            font-weight: 500
+            text-align: center
+        p
+            margin-top: 20px
+            font-weight: 300
+            text-align: center
+            color: $mediumgrey
+    .second 
+        margin-top: 80px
+        margin-bottom: 120px
+        .price-block
+            background: $lightgrey
+            text-align: center
+            h3
+                padding-top: 16px
+                margin-bottom: 19px
+                font-size: $medium
+                font-family: 'dosis', sans-serif
+                font-weight: 400
+            .price-shape-1
+                padding-top: 31px
+                padding-bottom: 15px
+                background: $white
+                span
+                    position: relative
+                    font-size: $biggest
+                    font-family: 'dosis', sans-serif
+                    font-weight: 500
+                    sub
+                        display: block
+                        position: absolute
+                        bottom: 7px
+                        right: -23px
+                        font-size: $smallest
+                    sup
+                        display: block
+                        position: absolute
+                        top: 7px
+                        left: -12px
+                        font-size: $smallest
+            .price-shape-2
+                width: 0
+                height: 0
+                border-top: 40px solid $white
+                border-left: 127px solid transparent
+                border-right: 128px solid transparent
+            ul
+                display: flex
+                flex-direction: column
+                margin-top: 40px
+                align-items: center
+                list-style: none
+                color: $lightgrey3
+                li
+                    width: 80%
+                    padding: 10px 0
+                    border-bottom: 1px dashed $border-grey
+                    &:last-child
+                        border: 0
+            #trial
+                display: block
+                margin-top: 52px
+                margin-bottom: 15px
+                color: $lightgrey2
+            a
+                display: inline-block
+                padding: 15px 44px
+                margin-bottom: 40px
+                font-weight: 500
+                background: $white
+                border: 1px $border-grey solid
+                border-radius: 50px
+                text-decoration: none
+                color: $darkgrey
+
+
 /*footer building*/
 footer
     color: $white
@@ -157,7 +241,7 @@ footer
         li
             margin-right: 30px
             i
-                font-size: 1.2em
+                font-size: $icons_size
     p
         padding-bottom: 60px
         margin-right: 25px
