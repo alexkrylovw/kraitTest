@@ -143,3 +143,7 @@ $("#download-item-3").mouseover(function(){
 $("#download-item-3").mouseout(function(){
     $("#download-image-3").attr("src", "/img/icons/device-icons/windows_i.png");
 });
+
+///////////////////////////////
+/////Video popup config
+jQuery("a.bla-1").YouTubePopUp();

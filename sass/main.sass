@@ -219,7 +219,23 @@ h1
 
 /*video section building*/
 .big-video-section
-    width: 100%
+    #video-container
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 400px
+        background: $darkgrey
+        background: url("../img/backgrounds/video-overlay.png")
+        a
+            transition: 0.3s
+            &:hover
+                -moz-transform: translate(0px, -5px)
+                -webkit-transform: translate(0px, -5px)
+                -o-transform: translate(0px, -5px)
+                -ms-transform: translate(0px, -5px)
+                transform: translate(0px, -5px)
+        
+        
 /*carousel2 section building*/
 
 /*Download section building*/
