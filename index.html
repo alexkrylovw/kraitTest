@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <!-- Youtube plugin style -->
     <link rel="stylesheet" href="css/YouTubePopUp.min.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!-- Google Fonts Dosis & Roboto (5pcs)-->
@@ -136,7 +139,27 @@
     </section>
     <section class="carousel-section">
       <div class="container">
-        
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <h2>Take a look at our screenshots</h2>
+            <p>Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-auto">
+            <button id="carousel-prev-1"><i class="fas fa-long-arrow-alt-left"></i></button>
+            <button id="carousel-next-1"><i class="fas fa-long-arrow-alt-right"></i></button>
+            <div id="carousel">
+              <img src="img/mockups/slider1/image1.png" alt="Image 1">
+              <img src="img/mockups/slider1/image2.png" alt="Image 2">
+              <img src="img/mockups/slider1/image3.png" alt="Image 3">
+              <img src="img/mockups/slider1/image4.png" alt="Image 4">
+              <img src="img/mockups/slider1/image5.png" alt="Image 5">
+              <img src="img/mockups/slider1/image6.png" alt="Image 6">
+              <img src="img/mockups/slider1/image7.png" alt="Image 7">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="pricing-section">
@@ -222,7 +245,80 @@
     </section>
     <section class="reviews-section">
       <div class="container">
-        
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <h2>What our customers are saying</h2>
+            <p>Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-auto">
+            <button id="carousel-prev-2"><i class="fas fa-long-arrow-alt-left"></i></button>
+            <button id="carousel-next-2"><i class="fas fa-long-arrow-alt-right"></i></button>
+            <div class="owl-carousel">
+                <div class="owl-carousel__item">
+                  <p>The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.</p>
+                  <div>
+                    <img src="img/icons/review_users/1.png" alt="Alexandra Bullock">
+                    <div class="name-comp">
+                      <span class="name">Alexandra Bullock</span>
+                      <span class="company">Apple Inc.</span>
+                    </div>
+                  </div>
+                </div>              
+                <div class="owl-carousel__item">
+                  <p>Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.</p>
+                  <div>
+                    <img src="img/icons/review_users/2.png" alt="Gary Sebastian">
+                    <div class="name-comp">
+                      <span class="name">Gary Sebastian</span>
+                      <span class="company">Apple Inc.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-carousel__item">
+                  <p>Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.</p>
+                  <div>
+                    <img src="img/icons/review_users/3.png" alt="Samantha Bilbau">
+                    <div class="name-comp">
+                      <span class="name">Samantha Bilbau</span>
+                      <span class="company">Apple Inc.</span>
+                    </div>
+                  </div>
+                </div>              
+                <div class="owl-carousel__item">
+                  <p>Never gonna give you up Never gonna let you down Never gonna run around and desert you Never gonna make you cry Never gonna say goodbye Never gonna tell a lie and hurt you</p>
+                  <div>
+                    <img src="img/icons/review_users/4.png" alt="Rick Astley">
+                    <div class="name-comp">
+                      <span class="name">Rick Astley</span>
+                      <span class="company">RCA Records</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-carousel__item">
+                  <p>Never gonna give you up Never gonna let you down Never gonna run around and desert you Never gonna make you cry Never gonna say goodbye Never gonna tell a lie and hurt you</p>
+                  <div>
+                    <img src="img/icons/review_users/4.png" alt="New user">
+                    <div class="name-comp">
+                      <span class="name">Rick Astley</span>
+                      <span class="company">RCA Records</span>
+                    </div>
+                  </div>
+                </div>              
+                <div class="owl-carousel__item">
+                  <p>Never gonna give you up Never gonna let you down Never gonna run around and desert you Never gonna make you cry Never gonna say goodbye Never gonna tell a lie and hurt you</p>
+                  <div>
+                    <img src="img/icons/review_users/4.png" alt="New user">
+                    <div class="name-comp">
+                      <span class="name">Rick Astley</span>
+                      <span class="company">RCA Records</span>
+                    </div>
+                  </div>
+                </div>
+            </div> 
+          </div>
+        </div>
       </div>
     </section>
     <section class="download-section">
@@ -278,10 +374,13 @@
         </div>
       </div>
     </footer>
+    <!-- jQuery 1.9.1 (old version for whaterwheel support) -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <!-- Optional JavaScript -->
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="js/YouTubePopUp.jquery.min.js"></script>
+    <script src="js/YouTubePopUp.jquery.min.js"></script> 
+    <script src="js/jquery.waterwheelCarousel.min.js"></script>
+    <script src="plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <!-- Main scripts file -->
     <script src="js/scripts.min.js"></script>
   </body>
 </html>

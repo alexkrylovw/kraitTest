@@ -146,4 +146,29 @@ $("#download-item-3").mouseout(function(){
 
 ///////////////////////////////
 /////Video popup config
-jQuery("a.bla-1").YouTubePopUp();
+$("a.bla-1").YouTubePopUp();
+
+///////////////////////////////
+///Slider section 1
+//settings
+var carousel_1 = $('#carousel').waterwheelCarousel({
+    separation: 220,
+    sizeMultiplier: 0.88,
+    opacityMultiplier: 1
+});
+//additional controls init
+$("#carousel-prev-1").click(function(){
+    carousel_1.prev();
+});
+$("#carousel-next-1").click(function(){
+    carousel_1.next();
+});
+
+//////////////////////////////
+///Slider section 2
+//settings
+$(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: true
+});

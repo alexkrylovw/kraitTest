@@ -187,6 +187,68 @@ h1 {
 }
 
 /*Carousel1 section building */
+.carousel-section {
+  padding-top: 120px;
+  background: #f7fafc;
+}
+.carousel-section h2 {
+  font-size: 2.6em;
+  font-family: "dosis", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+.carousel-section p {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-weight: 300;
+  text-align: center;
+  color: #777;
+}
+.carousel-section #carousel {
+  position: relative;
+  width: 1140px;
+  height: 505px;
+  margin-bottom: 120px;
+}
+.carousel-section #carousel img {
+  width: 360px;
+  height: 504px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 20px 101px -22px rgba(0, 0, 0, 0.23);
+  box-shadow: 0px 20px 101px -22px rgba(0, 0, 0, 0.23);
+}
+.carousel-section #carousel-prev-1, .carousel-section #carousel-next-1 {
+  position: absolute;
+  top: 37%;
+  width: 40px;
+  height: 40px;
+  padding-top: 1px;
+  color: #777;
+  background: #fff;
+  border: 1px solid #eeeeee;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+}
+.carousel-section #carousel-prev-1:hover, .carousel-section #carousel-next-1:hover {
+  background: #f31e7a;
+  background: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f31e7a));
+  background: linear-gradient(to right, #fd712c 0%, #f31e7a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#fd712c, endColorstr=#f31e7a);
+  color: #fff;
+  border-width: 3px;
+}
+.carousel-section #carousel-prev-1 {
+  left: -60px;
+}
+.carousel-section #carousel-next-1 {
+  right: -60px;
+}
+
 /*pricing section building */
 .pricing-section .first {
   margin-top: 120px;
@@ -310,6 +372,70 @@ h1 {
 }
 
 /*carousel2 section building */
+.reviews-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: #fff;
+}
+.reviews-section h2 {
+  font-size: 2.6em;
+  font-family: "dosis", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+.reviews-section p {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-weight: 300;
+  text-align: center;
+  color: #777;
+}
+.reviews-section .owl-carousel {
+  max-width: 1140px;
+}
+.reviews-section .owl-carousel__item {
+  padding: 40px;
+  background: #f7fafc;
+}
+.reviews-section .owl-carousel__item:hover {
+  background: #fff;
+  -webkit-box-shadow: 0px 20px 101px -22px rgba(0, 0, 0, 0.23);
+  box-shadow: 0px 20px 101px -22px rgba(0, 0, 0, 0.23);
+}
+.reviews-section .owl-carousel__item p {
+  margin-bottom: 30px;
+  text-align: left;
+}
+.reviews-section .owl-carousel__item div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.reviews-section .owl-carousel__item div img {
+  width: 80px;
+  height: 80px;
+}
+.reviews-section .owl-carousel__item div .name-comp {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 20px;
+}
+.reviews-section .owl-carousel__item div .name-comp .name {
+  font-family: "dosis", sans-serif;
+  font-size: 1.3em;
+}
+
 /*Download section building */
 .download-section {
   padding-top: 120px;

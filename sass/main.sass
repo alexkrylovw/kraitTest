@@ -139,7 +139,57 @@ h1
                     background-image: url('../img/icons/list-markers/marker2.png')
 
 /*Carousel1 section building*/
-    
+.carousel-section
+    padding-top: 120px
+    background: $lightgrey
+    h2
+        font-size: $bigger
+        font-family: 'dosis', sans-serif
+        font-weight: 500
+        text-align: center
+    p
+        margin-top: 20px
+        margin-bottom: 100px
+        font-weight: 300
+        text-align: center
+        color: $mediumgrey
+    #carousel
+        position: relative
+        width: 1140px
+        height: 505px
+        margin-bottom: 120px
+        img
+            width: 360px
+            height: 504px
+            object-fit: cover
+            object-position: top
+            cursor: pointer
+            -webkit-box-shadow: 0px 20px 101px -22px rgba(0,0,0,0.23)
+            -moz-box-shadow: 0px 20px 101px -22px rgba(0,0,0,0.23)
+            box-shadow: 0px 20px 101px -22px rgba(0,0,0,0.23)
+        &-prev-1, &-next-1
+            position: absolute
+            top: 37%
+            width: 40px
+            height: 40px
+            padding-top: 1px           
+            color: $mediumgrey
+            background: $white
+            border: 1px solid $border-grey
+            border-radius: 50px
+            outline: none
+            cursor: pointer
+            &:hover
+                @include linear-gradient-default
+                color: $white
+                border-width: 3px
+        &-prev-1
+            left: -60px
+        &-next-1
+            right: -60px
+        
+
+
 /*pricing section building*/
 .pricing-section
     .first
@@ -234,9 +284,51 @@ h1
                 -o-transform: translate(0px, -5px)
                 -ms-transform: translate(0px, -5px)
                 transform: translate(0px, -5px)
-        
-        
+
 /*carousel2 section building*/
+.reviews-section
+    padding-top: 120px
+    padding-bottom: 120px
+    background: $white
+    h2
+        font-size: $bigger
+        font-family: 'dosis', sans-serif
+        font-weight: 500
+        text-align: center
+    p
+        margin-top: 20px
+        margin-bottom: 100px
+        font-weight: 300
+        text-align: center
+        color: $mediumgrey
+    .owl-carousel
+        max-width: 1140px
+        &__item
+            padding: 40px
+            background: $lightgrey
+            &:hover
+                background: $white
+                -webkit-box-shadow: 0px 20px 101px -22px rgba(0,0,0,0.23)
+                -moz-box-shadow: 0px 20px 101px -22px rgba(0,0,0,0.23)
+                box-shadow: 0px 20px 101px -22px rgba(0,0,0,0.23)
+            p
+                margin-bottom: 30px
+                text-align: left
+            div
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                img
+                    width: 80px
+                    height: 80px
+                .name-comp
+                    flex-direction: column
+                    align-items: flex-start
+                    margin-left: 20px
+                    .name
+                        font-family: 'dosis', sans-serif
+                        font-size: $reviews_name
+            
 
 /*Download section building*/
 .download-section
