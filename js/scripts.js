@@ -149,7 +149,7 @@ $("#download-item-3").mouseout(function(){
 $("a.bla-1").YouTubePopUp();
 
 ///////////////////////////////
-///Slider section 1
+///Slider section 1 (whaterwheelCarousel.js)
 //settings
 var carousel_1 = $('#carousel').waterwheelCarousel({
     separation: 220,
@@ -165,10 +165,13 @@ $("#carousel-next-1").click(function(){
 });
 
 //////////////////////////////
-///Slider section 2
+///Slider section 2 (owl.carousel.js)
 //settings
 $(".owl-carousel").owlCarousel({
+    items: 3,
     loop: true,
     margin: 30,
-    nav: true
+    nav: true,
+    center: true,
+    dots: false
 });

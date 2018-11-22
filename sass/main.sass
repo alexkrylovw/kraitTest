@@ -1,6 +1,7 @@
 @import "colors"
 @import "mixins"
 @import "sizes"
+@import "plugins"
 *
     box-sizing: border-box
     padding: 0
@@ -8,16 +9,23 @@
     font-size: $default
     
 body
-    background-color: $white
     color: $darkgrey
     font-family: 'Roboto', sans-serif
 
-/*line-height correcting*/
+/*global styles correcting*/
+h1,h2,h3
+    font-family: 'dosis', sans-serif
+        
 p
     line-height: 24px               
-h1
-    line-height: 60px
-    
+
+h2
+    font-size: $bigger
+    font-weight: 500
+
+a
+    text-decoration: none
+
 /*top section building */   
 .top-section
     color: $white
@@ -39,11 +47,19 @@ h1
                     border-radius: 50px
                     color: $darkgrey
                     font-weight: 500
+                    transition: 0.3s
+                    &:hover
+                        @include linear-gradient-default
+                        color: $white
+                        box-shadow: 0 0 14px rgba(0, 0, 0, 0.6)
+
     div.container
         margin-top: 145px
         h1
+            line-height: 60px
             font-size: $giant
             font-family: 'dosis', sans-serif
+            font-weight: 600
         p
             margin-top: 25px
             font-weight: 300
@@ -72,7 +88,12 @@ h1
                 background-color: $white
                 border-radius: 50px
                 box-shadow: 0 0 14px rgba(0, 0, 0, 0.6)
+                transition: 0.3s
                 //border: #e2612b solid 6px
+                &:hover
+                    @include linear-gradient-default
+                    color: $white
+                    box-shadow: 0 0 18px rgba(0, 0, 0, 0.6)
     /*!!!dynamic size changing on media query needed!!!*/
     #iphones-1
         position: absolute
@@ -92,7 +113,6 @@ h1
         h3
             margin-bottom: 10px
             font-size: $big
-            font-family: 'dosis', sans-serif
             font-weight: 500
         p
             font-weight: 300
@@ -115,9 +135,6 @@ h1
         left: 8px
     h2
         margin-bottom: 12px
-        font-size: $bigger
-        font-family: 'dosis', sans-serif
-        font-weight: 500
     p
         font-weight: 300
         color: $mediumgrey
@@ -143,9 +160,6 @@ h1
     padding-top: 120px
     background: $lightgrey
     h2
-        font-size: $bigger
-        font-family: 'dosis', sans-serif
-        font-weight: 500
         text-align: center
     p
         margin-top: 20px
@@ -153,51 +167,12 @@ h1
         font-weight: 300
         text-align: center
         color: $mediumgrey
-    #carousel
-        position: relative
-        width: 1140px
-        height: 505px
-        margin-bottom: 120px
-        img
-            width: 360px
-            height: 504px
-            object-fit: cover
-            object-position: top
-            cursor: pointer
-            -webkit-box-shadow: 0px 20px 101px -22px rgba(0,0,0,0.23)
-            -moz-box-shadow: 0px 20px 101px -22px rgba(0,0,0,0.23)
-            box-shadow: 0px 20px 101px -22px rgba(0,0,0,0.23)
-        &-prev-1, &-next-1
-            position: absolute
-            top: 37%
-            width: 40px
-            height: 40px
-            padding-top: 1px           
-            color: $mediumgrey
-            background: $white
-            border: 1px solid $border-grey
-            border-radius: 50px
-            outline: none
-            cursor: pointer
-            &:hover
-                @include linear-gradient-default
-                color: $white
-                border-width: 3px
-        &-prev-1
-            left: -60px
-        &-next-1
-            right: -60px
-        
-
 
 /*pricing section building*/
 .pricing-section
     .first
         margin-top: 120px
         h2
-            font-size: $bigger
-            font-family: 'dosis', sans-serif
-            font-weight: 500
             text-align: center
         p
             margin-top: 20px
@@ -211,11 +186,10 @@ h1
             background: $lightgrey
             text-align: center
             h3
-                padding-top: 16px
-                margin-bottom: 19px
+                padding-top: 14px
+                margin-bottom: 14px
                 font-size: $medium
-                font-family: 'dosis', sans-serif
-                font-weight: 400
+                font-weight: 500
             .price-shape-1
                 position: relative
                 padding-top: 15px
@@ -241,7 +215,7 @@ h1
             ul
                 display: flex
                 flex-direction: column
-                margin-top: 40px
+                margin-top: 30px
                 align-items: center
                 list-style: none
                 color: $lightgrey3
@@ -253,7 +227,7 @@ h1
                         border: 0
             #trial
                 display: block
-                margin-top: 52px
+                margin-top: 35px
                 margin-bottom: 15px
                 color: $lightgrey2
             a
@@ -288,12 +262,9 @@ h1
 /*carousel2 section building*/
 .reviews-section
     padding-top: 120px
-    padding-bottom: 120px
+    padding-bottom: 76px //120px-(.owl-stage (default height)-(custom height) = 44px) 
     background: $white
     h2
-        font-size: $bigger
-        font-family: 'dosis', sans-serif
-        font-weight: 500
         text-align: center
     p
         margin-top: 20px
@@ -302,15 +273,9 @@ h1
         text-align: center
         color: $mediumgrey
     .owl-carousel
-        max-width: 1140px
         &__item
             padding: 40px
             background: $lightgrey
-            &:hover
-                background: $white
-                -webkit-box-shadow: 0px 20px 101px -22px rgba(0,0,0,0.23)
-                -moz-box-shadow: 0px 20px 101px -22px rgba(0,0,0,0.23)
-                box-shadow: 0px 20px 101px -22px rgba(0,0,0,0.23)
             p
                 margin-bottom: 30px
                 text-align: left
@@ -328,7 +293,6 @@ h1
                     .name
                         font-family: 'dosis', sans-serif
                         font-size: $reviews_name
-            
 
 /*Download section building*/
 .download-section
@@ -337,9 +301,6 @@ h1
     @include linear-gradient-default
     h2
         margin-bottom: 87px
-        font-size: $bigger
-        font-family: 'dosis', sans-serif
-        font-weight: 500
         text-align: center
         color: $white
     .download-item
@@ -358,8 +319,7 @@ h1
         .download-description
             margin: 23px auto 27px 20px
             h3
-                font-size: $bigger_0
-                font-family: 'dosis', sans-serif
+                font-size: $bigger_names
                 font-weight: 600
                 padding-bottom: 7px
                 color: $darkgrey
@@ -387,6 +347,13 @@ footer
             margin-right: 30px
             i
                 font-size: $icons_size
+            /*adjusting paddings manually, cause of glyps sizes are notequal to each other*/
+            &:first-child
+                padding-bottom: 0.5%
+            &:nth-child(2)
+                padding-bottom: 0.2%
+            &:nth-child(3)
+                padding-bottom: 0.35%
     p
         padding-bottom: 60px
         margin-right: 25px

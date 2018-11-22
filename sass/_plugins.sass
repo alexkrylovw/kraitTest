@@ -1,0 +1,76 @@
+///Whaterwheel carousel
+//all styling (item margins, opacity and size changes see in scripts.js)
+.carousel-section
+    #carousel
+        position: relative
+        width: 1140px
+        height: 505px
+        margin-bottom: 120px
+        img
+            width: 360px
+            height: 504px
+            object-fit: cover
+            object-position: top
+            cursor: pointer
+            -webkit-box-shadow: 0px 20px 101px -22px rgba(0,0,0,0.23)
+            -moz-box-shadow: 0px 20px 101px -22px rgba(0,0,0,0.23)
+            box-shadow: 0px 20px 101px -22px rgba(0,0,0,0.23)
+        &-prev-1, &-next-1
+            position: absolute
+            top: 37%
+            width: 40px
+            height: 40px
+            padding-top: 1px           
+            color: $mediumgrey
+            background: $white
+            border: 1px solid $border-grey
+            border-radius: 50px
+            outline: none
+            cursor: pointer
+            &:hover
+                @include linear-gradient-default
+                color: $white
+                border-width: 3px
+        &-prev-1
+            left: -60px
+        &-next-1
+            right: -60px    
+    
+    
+///Owl carousel
+//enhancing default carousel box height for proper shadows
+.owl-stage
+    height: 350px  
+//styling for center item only
+.owl-item.active.center
+    .owl-carousel__item
+        background: $white
+        -webkit-box-shadow: 0px 20px 50px -22px rgba(0,0,0,0.23)
+        -moz-box-shadow: 0px 20px 50px -22px rgba(0,0,0,0.23)
+        box-shadow: 0px 20px 50px -22px rgba(0,0,0,0.23)
+//custom nav buttons and max-width
+.reviews-section
+    .owl-carousel
+        max-width: 1140px
+        .owl-nav
+            position: relative
+            .owl-prev, .owl-next
+                position: absolute
+                top: -220px
+                width: 40px
+                height: 40px
+                padding-top: 1px           
+                color: $mediumgrey
+                background: $white
+                border: 1px solid $border-grey
+                border-radius: 50px
+                outline: none
+                cursor: pointer
+                &:hover
+                    @include linear-gradient-default
+                    color: $white
+                    border-width: 3px
+            .owl-prev
+                left: -90px
+            .owl-next
+                right: -90px

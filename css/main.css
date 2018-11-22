@@ -1,209 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-body {
-  background-color: #fff;
-  color: #222;
-  font-family: "Roboto", sans-serif;
-}
-
-/*line-height correcting */
-p {
-  line-height: 24px;
-}
-
-h1 {
-  line-height: 60px;
-}
-
-/*top section building */
-.top-section {
-  color: #fff;
-  background: #f31e7a;
-  background: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f31e7a));
-  background: linear-gradient(to right, #fd712c 0%, #f31e7a 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#fd712c, endColorstr=#f31e7a);
-  /*!!!dynamic size changing on media query needed!!! */
-}
-.top-section header.container {
-  padding-top: 30px;
-}
-.top-section-menu ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.top-section-menu ul li {
-  margin-right: 50px;
-  padding: 11px 0;
-}
-.top-section-menu ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-.top-section-menu ul li #header-download-link {
-  padding: 11px 30px;
-  background-color: #fff;
-  border-radius: 50px;
-  color: #222;
-  font-weight: 500;
-}
-.top-section div.container {
-  margin-top: 145px;
-}
-.top-section div.container h1 {
-  font-size: 3.9em;
-  font-family: "dosis", sans-serif;
-}
-.top-section div.container p {
-  margin-top: 25px;
-  font-weight: 300;
-}
-.top-section div.container #top-section-list {
-  margin-top: 25px;
-  list-style-position: inside;
-  list-style-type: none;
-}
-.top-section div.container #top-section-list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 16px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /*initializing additional flex elements for custom list bullets (list-style-image don't looks cool) */
-}
-.top-section div.container #top-section-list li .custom-bullet {
-  width: 15px;
-  height: 15px;
-  margin-right: 20px;
-  background-image: url("../img/icons/list-markers/marker1.png");
-}
-.top-section div.container #top-section-button {
-  margin-top: 50px;
-  margin-bottom: 214px;
-}
-.top-section div.container #top-section-button a {
-  color: #222;
-  font-weight: 500;
-  text-decoration: none;
-  padding: 12px 45px;
-  background-color: #fff;
-  border-radius: 50px;
-  -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 0 14px rgba(0, 0, 0, 0.6);
-}
-.top-section #iphones-1 {
-  position: absolute;
-  top: 150px;
-  right: 0px;
-}
-
-/*features-1-section building */
-.features-1-section {
-  padding-top: 120px;
-}
-.features-1-section .feature {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.features-1-section .feature .feature-logo {
-  margin-top: 15px;
-  margin-right: 18px;
-}
-.features-1-section .feature h3 {
-  margin-bottom: 10px;
-  font-size: 1.6em;
-  font-family: "dosis", sans-serif;
-  font-weight: 500;
-}
-.features-1-section .feature p {
-  font-weight: 300;
-  color: #777;
-}
-.features-1-section hr {
-  margin-top: 122px;
-  height: 2px;
-  color: #f7fafc;
-  background-color: #f7fafc;
-  border: none;
-}
-
-/*features-2-section building */
-.features-2-section {
-  position: relative;
-  padding-top: 120px;
-  padding-bottom: 180px;
-}
-.features-2-section img {
-  position: absolute;
-  top: -56px;
-  left: 8px;
-}
-.features-2-section h2 {
-  margin-bottom: 12px;
-  font-size: 2.6em;
-  font-family: "dosis", sans-serif;
-  font-weight: 500;
-}
-.features-2-section p {
-  font-weight: 300;
-  color: #777;
-}
-.features-2-section #second-p {
-  margin-top: 80px;
-}
-.features-2-section #features-2-section-list {
-  margin-top: 25px;
-  list-style-position: inside;
-  list-style-type: none;
-}
-.features-2-section #features-2-section-list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 16px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /*initializing additional flex elements for custom list bullets (list-style-image don't looks cool) */
-}
-.features-2-section #features-2-section-list li .custom-bullet {
-  width: 15px;
-  height: 15px;
-  margin-right: 20px;
-  background-image: url("../img/icons/list-markers/marker2.png");
-}
-
-/*Carousel1 section building */
-.carousel-section {
-  padding-top: 120px;
-  background: #f7fafc;
-}
-.carousel-section h2 {
-  font-size: 2.6em;
-  font-family: "dosis", sans-serif;
-  font-weight: 500;
-  text-align: center;
-}
-.carousel-section p {
-  margin-top: 20px;
-  margin-bottom: 100px;
-  font-weight: 300;
-  text-align: center;
-  color: #777;
-}
 .carousel-section #carousel {
   position: relative;
   width: 1140px;
@@ -249,14 +43,287 @@ h1 {
   right: -60px;
 }
 
+.owl-stage {
+  height: 350px;
+}
+
+.owl-item.active.center .owl-carousel__item {
+  background: #fff;
+  -webkit-box-shadow: 0px 20px 50px -22px rgba(0, 0, 0, 0.23);
+  box-shadow: 0px 20px 50px -22px rgba(0, 0, 0, 0.23);
+}
+
+.reviews-section .owl-carousel {
+  max-width: 1140px;
+}
+.reviews-section .owl-carousel .owl-nav {
+  position: relative;
+}
+.reviews-section .owl-carousel .owl-nav .owl-prev, .reviews-section .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: -220px;
+  width: 40px;
+  height: 40px;
+  padding-top: 1px;
+  color: #777;
+  background: #fff;
+  border: 1px solid #eeeeee;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+}
+.reviews-section .owl-carousel .owl-nav .owl-prev:hover, .reviews-section .owl-carousel .owl-nav .owl-next:hover {
+  background: #f31e7a;
+  background: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f31e7a));
+  background: linear-gradient(to right, #fd712c 0%, #f31e7a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#fd712c, endColorstr=#f31e7a);
+  color: #fff;
+  border-width: 3px;
+}
+.reviews-section .owl-carousel .owl-nav .owl-prev {
+  left: -90px;
+}
+.reviews-section .owl-carousel .owl-nav .owl-next {
+  right: -90px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+body {
+  color: #222;
+  font-family: "Roboto", sans-serif;
+}
+
+/*global styles correcting */
+h1, h2, h3 {
+  font-family: "dosis", sans-serif;
+}
+
+p {
+  line-height: 24px;
+}
+
+h2 {
+  font-size: 2.6em;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*top section building */
+.top-section {
+  color: #fff;
+  background: #f31e7a;
+  background: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f31e7a));
+  background: linear-gradient(to right, #fd712c 0%, #f31e7a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#fd712c, endColorstr=#f31e7a);
+  /*!!!dynamic size changing on media query needed!!! */
+}
+.top-section header.container {
+  padding-top: 30px;
+}
+.top-section-menu ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.top-section-menu ul li {
+  margin-right: 50px;
+  padding: 11px 0;
+}
+.top-section-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.top-section-menu ul li #header-download-link {
+  padding: 11px 30px;
+  background-color: #fff;
+  border-radius: 50px;
+  color: #222;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.top-section-menu ul li #header-download-link:hover {
+  background: #f31e7a;
+  background: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f31e7a));
+  background: linear-gradient(to right, #fd712c 0%, #f31e7a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#fd712c, endColorstr=#f31e7a);
+  color: #fff;
+  -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 14px rgba(0, 0, 0, 0.6);
+}
+.top-section div.container {
+  margin-top: 145px;
+}
+.top-section div.container h1 {
+  line-height: 60px;
+  font-size: 3.9em;
+  font-family: "dosis", sans-serif;
+  font-weight: 600;
+}
+.top-section div.container p {
+  margin-top: 25px;
+  font-weight: 300;
+}
+.top-section div.container #top-section-list {
+  margin-top: 25px;
+  list-style-position: inside;
+  list-style-type: none;
+}
+.top-section div.container #top-section-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*initializing additional flex elements for custom list bullets (list-style-image don't looks cool) */
+}
+.top-section div.container #top-section-list li .custom-bullet {
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+  background-image: url("../img/icons/list-markers/marker1.png");
+}
+.top-section div.container #top-section-button {
+  margin-top: 50px;
+  margin-bottom: 214px;
+}
+.top-section div.container #top-section-button a {
+  color: #222;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 12px 45px;
+  background-color: #fff;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 14px rgba(0, 0, 0, 0.6);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.top-section div.container #top-section-button a:hover {
+  background: #f31e7a;
+  background: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f31e7a));
+  background: linear-gradient(to right, #fd712c 0%, #f31e7a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#fd712c, endColorstr=#f31e7a);
+  color: #fff;
+  -webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 18px rgba(0, 0, 0, 0.6);
+}
+.top-section #iphones-1 {
+  position: absolute;
+  top: 150px;
+  right: 0px;
+}
+
+/*features-1-section building */
+.features-1-section {
+  padding-top: 120px;
+}
+.features-1-section .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.features-1-section .feature .feature-logo {
+  margin-top: 15px;
+  margin-right: 18px;
+}
+.features-1-section .feature h3 {
+  margin-bottom: 10px;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+.features-1-section .feature p {
+  font-weight: 300;
+  color: #777;
+}
+.features-1-section hr {
+  margin-top: 122px;
+  height: 2px;
+  color: #f7fafc;
+  background-color: #f7fafc;
+  border: none;
+}
+
+/*features-2-section building */
+.features-2-section {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 180px;
+}
+.features-2-section img {
+  position: absolute;
+  top: -56px;
+  left: 8px;
+}
+.features-2-section h2 {
+  margin-bottom: 12px;
+}
+.features-2-section p {
+  font-weight: 300;
+  color: #777;
+}
+.features-2-section #second-p {
+  margin-top: 80px;
+}
+.features-2-section #features-2-section-list {
+  margin-top: 25px;
+  list-style-position: inside;
+  list-style-type: none;
+}
+.features-2-section #features-2-section-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*initializing additional flex elements for custom list bullets (list-style-image don't looks cool) */
+}
+.features-2-section #features-2-section-list li .custom-bullet {
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+  background-image: url("../img/icons/list-markers/marker2.png");
+}
+
+/*Carousel1 section building */
+.carousel-section {
+  padding-top: 120px;
+  background: #f7fafc;
+}
+.carousel-section h2 {
+  text-align: center;
+}
+.carousel-section p {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-weight: 300;
+  text-align: center;
+  color: #777;
+}
+
 /*pricing section building */
 .pricing-section .first {
   margin-top: 120px;
 }
 .pricing-section .first h2 {
-  font-size: 2.6em;
-  font-family: "dosis", sans-serif;
-  font-weight: 500;
   text-align: center;
 }
 .pricing-section .first p {
@@ -274,11 +341,10 @@ h1 {
   text-align: center;
 }
 .pricing-section .second .price-block h3 {
-  padding-top: 16px;
-  margin-bottom: 19px;
+  padding-top: 14px;
+  margin-bottom: 14px;
   font-size: 1.4em;
-  font-family: "dosis", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 .pricing-section .second .price-block .price-shape-1 {
   position: relative;
@@ -314,7 +380,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 40px;
+  margin-top: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -331,7 +397,7 @@ h1 {
 }
 .pricing-section .second .price-block #trial {
   display: block;
-  margin-top: 52px;
+  margin-top: 35px;
   margin-bottom: 15px;
   color: #aaa;
 }
@@ -374,13 +440,10 @@ h1 {
 /*carousel2 section building */
 .reviews-section {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 76px;
   background: #fff;
 }
 .reviews-section h2 {
-  font-size: 2.6em;
-  font-family: "dosis", sans-serif;
-  font-weight: 500;
   text-align: center;
 }
 .reviews-section p {
@@ -390,17 +453,9 @@ h1 {
   text-align: center;
   color: #777;
 }
-.reviews-section .owl-carousel {
-  max-width: 1140px;
-}
 .reviews-section .owl-carousel__item {
   padding: 40px;
   background: #f7fafc;
-}
-.reviews-section .owl-carousel__item:hover {
-  background: #fff;
-  -webkit-box-shadow: 0px 20px 101px -22px rgba(0, 0, 0, 0.23);
-  box-shadow: 0px 20px 101px -22px rgba(0, 0, 0, 0.23);
 }
 .reviews-section .owl-carousel__item p {
   margin-bottom: 30px;
@@ -447,9 +502,6 @@ h1 {
 }
 .download-section h2 {
   margin-bottom: 87px;
-  font-size: 2.6em;
-  font-family: "dosis", sans-serif;
-  font-weight: 500;
   text-align: center;
   color: #fff;
 }
@@ -482,7 +534,6 @@ h1 {
 }
 .download-section .download-item .download-description h3 {
   font-size: 2.1em;
-  font-family: "dosis", sans-serif;
   font-weight: 600;
   padding-bottom: 7px;
   color: #222;
@@ -520,9 +571,19 @@ footer ul {
 }
 footer ul li {
   margin-right: 30px;
+  /*adjusting paddings manually, cause of glyps sizes are notequal to each other */
 }
 footer ul li i {
   font-size: 1.2em;
+}
+footer ul li:first-child {
+  padding-bottom: 0.5%;
+}
+footer ul li:nth-child(2) {
+  padding-bottom: 0.2%;
+}
+footer ul li:nth-child(3) {
+  padding-bottom: 0.35%;
 }
 footer p {
   padding-bottom: 60px;
