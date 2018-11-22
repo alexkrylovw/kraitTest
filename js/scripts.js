@@ -4,9 +4,9 @@
 //in
 $("#price-block-1").mouseover(function(){
     $("#price-block-1").css("background", "#fff");
-    $("#price-block-1").css("-webkit-box-shadow", "0px 3px 27px -4px rgba(0,0,0,0.75)");
-    $("#price-block-1").css("-moz-box-shadow", "0px 3px 27px -4px rgba(0,0,0,0.75)");
-    $("#price-block-1").css("box-shadow", "0px 3px 27px -4px rgba(0,0,0,0.75)");
+    $("#price-block-1").css("-webkit-box-shadow", "0px 20px 101px -22px rgba(0,0,0,0.23)");
+    $("#price-block-1").css("-moz-box-shadow", "0px 20px 101px -22px rgba(0,0,0,0.23)");
+    $("#price-block-1").css("box-shadow", "0px 20px 101px -22px rgba(0,0,0,0.23)");
     $("#price-1").css("color", "#fff");
     $("#price-button-1").css("border-width", "3px");
     $("#price-shape-1").css("background", "url('../img/backgrounds/price-background-grad.svg')");
@@ -32,9 +32,9 @@ $("#price-block-1").mouseout(function(){
 //in
 $("#price-block-2").mouseover(function(){
     $("#price-block-2").css("background", "#fff");
-    $("#price-block-2").css("-webkit-box-shadow", "0px 3px 27px -4px rgba(0,0,0,0.75)");
-    $("#price-block-2").css("-moz-box-shadow", "0px 3px 27px -4px rgba(0,0,0,0.75)");
-    $("#price-block-2").css("box-shadow", "0px 3px 27px -4px rgba(0,0,0,0.75)");
+    $("#price-block-2").css("-webkit-box-shadow", "0px 20px 101px -22px rgba(0,0,0,0.23)");
+    $("#price-block-2").css("-moz-box-shadow", "0px 20px 101px -22px rgba(0,0,0,0.23)");
+    $("#price-block-2").css("box-shadow", "0px 20px 101px -22px rgba(0,0,0,0.23)");
     $("#price-2").css("color", "#fff");
     $("#price-button-2").css("border-width", "3px");
     $("#price-shape-2").css("background", "url('../img/backgrounds/price-background-grad.svg')");
@@ -60,9 +60,9 @@ $("#price-block-2").mouseout(function(){
 //in
 $("#price-block-3").mouseover(function(){
     $("#price-block-3").css("background", "#fff");
-    $("#price-block-3").css("-webkit-box-shadow", "0px 3px 27px -4px rgba(0,0,0,0.75)");
-    $("#price-block-3").css("-moz-box-shadow", "0px 3px 27px -4px rgba(0,0,0,0.75)");
-    $("#price-block-3").css("box-shadow", "0px 3px 27px -4px rgba(0,0,0,0.75)");
+    $("#price-block-3").css("-webkit-box-shadow", "0px 20px 101px -22px rgba(0,0,0,0.23)");
+    $("#price-block-3").css("-moz-box-shadow", "0px 20px 101px -22px rgba(0,0,0,0.23)");
+    $("#price-block-3").css("box-shadow", "0px 20px 101px -22px rgba(0,0,0,0.23)");
     $("#price-3").css("color", "#fff");
     $("#price-button-3").css("border-width", "3px");
     $("#price-shape-3").css("background", "url('../img/backgrounds/price-background-grad.svg')");
@@ -88,9 +88,9 @@ $("#price-block-3").mouseout(function(){
 //in
 $("#price-block-4").mouseover(function(){
     $("#price-block-4").css("background", "#fff");
-    $("#price-block-4").css("-webkit-box-shadow", "0px 3px 27px -4px rgba(0,0,0,0.75)");
-    $("#price-block-4").css("-moz-box-shadow", "0px 3px 27px -4px rgba(0,0,0,0.75)");
-    $("#price-block-4").css("box-shadow", "0px 3px 27px -4px rgba(0,0,0,0.75)");
+    $("#price-block-4").css("-webkit-box-shadow", "0px 20px 101px -22px rgba(0,0,0,0.23)");
+    $("#price-block-4").css("-moz-box-shadow", "0px 20px 101px -22px rgba(0,0,0,0.23)");
+    $("#price-block-4").css("box-shadow", "0px 20px 101px -22px rgba(0,0,0,0.23)");
     $("#price-4").css("color", "#fff");
     $("#price-button-4").css("border-width", "3px");
     $("#price-shape-4").css("background", "url('../img/backgrounds/price-background-grad.svg')");

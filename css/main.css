@@ -101,7 +101,7 @@ body {
 }
 
 /*global styles correcting */
-h1, h2, h3 {
+h1, h2 {
   font-family: "dosis", sans-serif;
 }
 
@@ -125,7 +125,6 @@ a {
   background: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f31e7a));
   background: linear-gradient(to right, #fd712c 0%, #f31e7a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#fd712c, endColorstr=#f31e7a);
-  /*!!!dynamic size changing on media query needed!!! */
 }
 .top-section header.container {
   padding-top: 30px;
@@ -160,7 +159,7 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#fd712c, endColorstr=#f31e7a);
   color: #fff;
   -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 0 14px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.6);
 }
 .top-section div.container {
   margin-top: 145px;
@@ -208,7 +207,7 @@ a {
   background-color: #fff;
   border-radius: 50px;
   -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 0 14px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.6);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -219,7 +218,7 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#fd712c, endColorstr=#f31e7a);
   color: #fff;
   -webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 0 18px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.6);
 }
 .top-section #iphones-1 {
   position: absolute;
@@ -239,13 +238,15 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-.features-1-section .feature .feature-logo {
+.features-1-section .feature-logo {
   margin-top: 15px;
   margin-right: 18px;
 }
-.features-1-section .feature h3 {
+.features-1-section .feature-name {
+  font-family: "dosis", sans-serif;
+  display: block;
   margin-bottom: 10px;
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-weight: 500;
 }
 .features-1-section .feature p {
@@ -258,6 +259,9 @@ a {
   color: #f7fafc;
   background-color: #f7fafc;
   border: none;
+}
+.features-1-section .features-row-2 {
+  margin-top: 45px;
 }
 
 /*features-2-section building */
@@ -340,11 +344,13 @@ a {
   background: #f7fafc;
   text-align: center;
 }
-.pricing-section .second .price-block h3 {
+.pricing-section .second .price-block-name {
+  display: block;
   padding-top: 14px;
   margin-bottom: 14px;
   font-size: 1.4em;
   font-weight: 500;
+  font-family: "dosis", sans-serif;
 }
 .pricing-section .second .price-block .price-shape-1 {
   position: relative;
@@ -395,7 +401,7 @@ a {
 .pricing-section .second .price-block ul li:last-child {
   border: 0;
 }
-.pricing-section .second .price-block #trial {
+.pricing-section .second .price-block .trial {
   display: block;
   margin-top: 35px;
   margin-bottom: 15px;
@@ -532,9 +538,11 @@ a {
 .download-section .download-item .download-description {
   margin: 23px auto 27px 20px;
 }
-.download-section .download-item .download-description h3 {
+.download-section .download-item .download-description .download-label {
+  display: block;
   font-size: 2.1em;
   font-weight: 600;
+  font-family: "dosis", sans-serif;
   padding-bottom: 7px;
   color: #222;
 }

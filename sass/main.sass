@@ -13,7 +13,7 @@ body
     font-family: 'Roboto', sans-serif
 
 /*global styles correcting*/
-h1,h2,h3
+h1,h2
     font-family: 'dosis', sans-serif
         
 p
@@ -51,6 +51,8 @@ a
                     &:hover
                         @include linear-gradient-default
                         color: $white
+                        -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.6)
+                        -moz-box-shadow: 0 0 14px rgba(0, 0, 0, 0.6)
                         box-shadow: 0 0 14px rgba(0, 0, 0, 0.6)
 
     div.container
@@ -87,14 +89,17 @@ a
                 padding: 12px 45px
                 background-color: $white
                 border-radius: 50px
+                -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.6)
+                -moz-box-shadow: 0 0 14px rgba(0, 0, 0, 0.6)
                 box-shadow: 0 0 14px rgba(0, 0, 0, 0.6)
                 transition: 0.3s
                 //border: #e2612b solid 6px
                 &:hover
                     @include linear-gradient-default
                     color: $white
+                    -webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.6)
+                    -moz-box-shadow: 0 0 18px rgba(0, 0, 0, 0.6)
                     box-shadow: 0 0 18px rgba(0, 0, 0, 0.6)
-    /*!!!dynamic size changing on media query needed!!!*/
     #iphones-1
         position: absolute
         top: 150px
@@ -107,10 +112,12 @@ a
     .feature
         display: flex
         align-items: center
-        .feature-logo
+        &-logo
             margin-top: 15px
             margin-right: 18px
-        h3
+        &-name
+            font-family: 'dosis', sans-serif
+            display: block
             margin-bottom: 10px
             font-size: $big
             font-weight: 500
@@ -123,6 +130,8 @@ a
         color: $lightgrey
         background-color: $lightgrey
         border: none
+    .features-row-2
+        margin-top: 45px
 
 /*features-2-section building*/
 .features-2-section
@@ -185,11 +194,13 @@ a
         .price-block
             background: $lightgrey
             text-align: center
-            h3
+            &-name
+                display: block
                 padding-top: 14px
                 margin-bottom: 14px
                 font-size: $medium
                 font-weight: 500
+                font-family: 'dosis', sans-serif
             .price-shape-1
                 position: relative
                 padding-top: 15px
@@ -225,7 +236,7 @@ a
                     border-bottom: 1px dashed $border-grey
                     &:last-child
                         border: 0
-            #trial
+            .trial
                 display: block
                 margin-top: 35px
                 margin-bottom: 15px
@@ -318,11 +329,14 @@ a
                 padding-top: 23px
         .download-description
             margin: 23px auto 27px 20px
-            h3
+            .download-label
+                display: block
                 font-size: $bigger_names
                 font-weight: 600
+                font-family: 'dosis', sans-serif
                 padding-bottom: 7px
                 color: $darkgrey
+                
             span
                 color: $mediumgrey
                 font-weight: 300
