@@ -225,6 +225,12 @@ a {
   top: 150px;
   right: 0px;
 }
+@media (max-width: 1625px) {
+  .top-section #iphones-1 {
+    top: 220px;
+    width: 50%;
+  }
+}
 
 /*features-1-section building */
 .features-1-section {
@@ -266,31 +272,33 @@ a {
 
 /*features-2-section building */
 .features-2-section {
-  position: relative;
   padding-top: 120px;
   padding-bottom: 180px;
 }
-.features-2-section img {
-  position: absolute;
-  top: -56px;
-  left: 8px;
+.features-2-section .container {
+  position: relative;
 }
-.features-2-section h2 {
+.features-2-section .container #iphones-2 {
+  position: absolute;
+  top: -188px;
+  left: -365px;
+}
+.features-2-section .container h2 {
   margin-bottom: 12px;
 }
-.features-2-section p {
+.features-2-section .container p {
   font-weight: 300;
   color: #777;
 }
-.features-2-section #second-p {
+.features-2-section .container #second-p {
   margin-top: 80px;
 }
-.features-2-section #features-2-section-list {
+.features-2-section .container #features-2-section-list {
   margin-top: 25px;
   list-style-position: inside;
   list-style-type: none;
 }
-.features-2-section #features-2-section-list li {
+.features-2-section .container #features-2-section-list li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,7 +308,7 @@ a {
           align-items: center;
   /*initializing additional flex elements for custom list bullets (list-style-image don't looks cool) */
 }
-.features-2-section #features-2-section-list li .custom-bullet {
+.features-2-section .container #features-2-section-list li .custom-bullet {
   width: 15px;
   height: 15px;
   margin-right: 20px;
@@ -321,6 +329,14 @@ a {
   font-weight: 300;
   text-align: center;
   color: #777;
+}
+@media (max-width: 1200px) {
+  .carousel-section .col-md-auto #carousel {
+    display: none;
+  }
+  .carousel-section .col-md-auto #carousel-prev-1, .carousel-section .col-md-auto #carousel-next-1 {
+    display: none;
+  }
 }
 
 /*pricing section building */

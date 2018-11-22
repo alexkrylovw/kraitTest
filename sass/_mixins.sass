@@ -1,3 +1,4 @@
+//Backgrounds
 @mixin linear-gradient-default
     background: $body-bg-gradient-pink
     background: -moz-linear-gradient(left, $body-bg-gradient-orange 0%, $body-bg-gradient-pink 100%)
@@ -7,4 +8,11 @@
     background: linear-gradient(to right, $body-bg-gradient-orange 0%,$body-bg-gradient-pink 100%)
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#{$body-bg-gradient-orange}, endColorstr=#{$body-bg-gradient-pink})
 
+//Media queries
+@mixin medium-widescreen-desktop
+    @media (max-width: 1625px)
+        @content
 
+@mixin medium-widescreen-laptop
+    @media (max-width: 1200px)
+        @content

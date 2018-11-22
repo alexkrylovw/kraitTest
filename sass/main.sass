@@ -104,6 +104,10 @@ a
         position: absolute
         top: 150px
         right: 0px
+    @include medium-widescreen-desktop
+        #iphones-1
+            top: 220px
+            width: 50%
         
 
 /*features-1-section building*/
@@ -135,34 +139,36 @@ a
 
 /*features-2-section building*/
 .features-2-section
-    position: relative
     padding-top: 120px 
-    padding-bottom: 180px  
-    img
-        position: absolute
-        top: -56px
-        left: 8px
-    h2
-        margin-bottom: 12px
-    p
-        font-weight: 300
-        color: $mediumgrey
-    #second-p
-        margin-top: 80px
-    #features-2-section-list
-            margin-top: 25px
-            list-style-position: inside 
-            list-style-type: none
-            li
-                display: flex
-                margin-bottom: 16px
-                align-items: center
-                /*initializing additional flex elements for custom list bullets (list-style-image don't looks cool)*/
-                .custom-bullet             
-                    width: 15px
-                    height: 15px
-                    margin-right: 20px
-                    background-image: url('../img/icons/list-markers/marker2.png')
+    padding-bottom: 180px
+    .container
+        position: relative  
+        #iphones-2
+            position: absolute
+            top: -188px
+            left: -365px
+        
+        h2
+            margin-bottom: 12px
+        p
+            font-weight: 300
+            color: $mediumgrey
+        #second-p
+            margin-top: 80px
+        #features-2-section-list
+                margin-top: 25px
+                list-style-position: inside 
+                list-style-type: none
+                li
+                    display: flex
+                    margin-bottom: 16px
+                    align-items: center
+                    /*initializing additional flex elements for custom list bullets (list-style-image don't looks cool)*/
+                    .custom-bullet             
+                        width: 15px
+                        height: 15px
+                        margin-right: 20px
+                        background-image: url('../img/icons/list-markers/marker2.png')
 
 /*Carousel1 section building*/
 .carousel-section
@@ -176,7 +182,13 @@ a
         font-weight: 300
         text-align: center
         color: $mediumgrey
-
+    .col-md-auto
+        @include medium-widescreen-laptop
+            #carousel
+                display: none
+                &-prev-1,&-next-1
+                    display: none
+// INSERT HERE RULES FOR HIDDEN BLOCK WITH IMAGES
 /*pricing section building*/
 .pricing-section
     .first
