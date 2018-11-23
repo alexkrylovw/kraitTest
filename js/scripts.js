@@ -150,9 +150,17 @@ $("a.bla-1").YouTubePopUp();
 
 ///////////////////////////////
 ///Slider section 1 (whaterwheelCarousel.js)
+//dynamic separation changing script for responsive design
+function separationChange(){
+    if ($(window).width() >= "1200"){
+        return 220
+    } else {
+        return 0
+    }
+};
 //settings
 var carousel_1 = $('#carousel').waterwheelCarousel({
-    separation: 220,
+    separation: separationChange(),
     sizeMultiplier: 0.88,
     opacityMultiplier: 1
 });

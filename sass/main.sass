@@ -147,7 +147,7 @@ a
                     li
                         display: block
                         margin: 0
-                        border-top: 1px solid $white
+                        border-bottom: 1px solid $white
                         text-align: right
                         a
                             font-size: 1.2em
@@ -224,8 +224,7 @@ a
         #iphones-2
             position: absolute
             top: -188px
-            left: -365px
-        
+            left: -365px 
         h2
             margin-bottom: 20px
         p
@@ -281,13 +280,27 @@ a
         font-weight: 300
         text-align: center
         color: $mediumgrey
-    .col-md-auto
+    .col-auto
         @include medium-widescreen-laptop
             #carousel
-                display: none
+                display: block 
                 &-prev-1,&-next-1
-                    display: none
-// INSERT HERE RULES FOR HIDDEN BLOCK WITH IMAGES
+                    top: 550px 
+                &-prev-1
+                    left: 508px
+                &-next-1
+                    right: 508px
+        @include boot-strap-xl
+            #carousel
+                width: 300px !important //if width <=1200px separation=0 and forcing width
+                margin-left: auto
+                margin-right: auto
+                &-prev-1
+                    left: 90px
+                &-next-1
+                    right: 90px
+                    
+                    
 @include small-size-smartphone
     .carousel-section
         padding-top: 60px

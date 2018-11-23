@@ -1,5 +1,6 @@
 .carousel-section #carousel {
   position: relative;
+  text-align: center;
   width: 1140px;
   height: 505px;
   margin-bottom: 120px;
@@ -308,7 +309,7 @@ a {
   .top-section .top-section-menu ul li {
     display: block;
     margin: 0;
-    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     text-align: right;
   }
   .top-section .top-section-menu ul li a {
@@ -492,11 +493,30 @@ a {
   color: #777;
 }
 @media screen and (max-width: 1350px) {
-  .carousel-section .col-md-auto #carousel {
-    display: none;
+  .carousel-section .col-auto #carousel {
+    display: block;
   }
-  .carousel-section .col-md-auto #carousel-prev-1, .carousel-section .col-md-auto #carousel-next-1 {
-    display: none;
+  .carousel-section .col-auto #carousel-prev-1, .carousel-section .col-auto #carousel-next-1 {
+    top: 550px;
+  }
+  .carousel-section .col-auto #carousel-prev-1 {
+    left: 508px;
+  }
+  .carousel-section .col-auto #carousel-next-1 {
+    right: 508px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .carousel-section .col-auto #carousel {
+    width: 300px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .carousel-section .col-auto #carousel-prev-1 {
+    left: 90px;
+  }
+  .carousel-section .col-auto #carousel-next-1 {
+    right: 90px;
   }
 }
 
