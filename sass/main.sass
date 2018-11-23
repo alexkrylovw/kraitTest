@@ -54,7 +54,13 @@ a
                         -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.6)
                         -moz-box-shadow: 0 0 14px rgba(0, 0, 0, 0.6)
                         box-shadow: 0 0 14px rgba(0, 0, 0, 0.6)
-
+    #burger_button
+        display: none
+        float: right
+        cursor: pointer
+        margin-top: 4px
+        i
+            font-size: 2.6em
     div.container
         margin-top: 145px
         h1
@@ -108,14 +114,64 @@ a
         #iphones-1
             top: 220px
             width: 50%
-        
-
+    @include boot-strap-lg
+        #iphones-1
+            display: none
+    @include boot-strap-lg
+        div.container
+            h1
+                font-size: 3em
+    @include small-size-smartphone
+        div.container
+            margin-top: 50px
+            text-align: center
+            h1
+                font-size: 2.2em
+            #top-section-list
+                li  
+                    justify-content: center  
+                    .custom-bullet
+                        display: none
+            #top-section-button
+                margin-bottom: 100px
+            /*responsive menu settings*/
+    @include boot-strap-md
+        .top-section   
+            &-menu
+                display: none
+                margin-top: 20px
+                ul
+                    flex-direction: column
+                    width: 100%
+                    margin-top: 50px
+                    li
+                        display: block
+                        margin: 0
+                        border-top: 1px solid $white
+                        text-align: right
+                        a
+                            font-size: 1.2em
+                        #header-download-link
+                            padding: 0
+                            background-color: transparent
+                            border-radius: 0
+                            color: $white
+                            font-weight: 600
+                            &:hover
+                                background: none
+                                color: none
+                                -webkit-box-shadow: none
+                                -moz-box-shadow: none
+                                box-shadow: none
+        #burger_button
+            display: inline-block       
 /*features-1-section building*/
 .features-1-section
     padding-top: 120px
     .feature
         display: flex
         align-items: center
+        width: 360px
         &-logo
             margin-top: 15px
             margin-right: 18px
@@ -136,6 +192,28 @@ a
         border: none
     .features-row-2
         margin-top: 45px
+@include medium-widescreen-laptop
+    .features-1-section     
+        .feature
+            margin: 20px auto
+        .features-row-2
+            margin-top: 0
+@include small-size-smartphone
+    .features-1-section
+        padding-top: 60px     
+        .feature
+            width: 75%
+            flex-direction: column
+            &-name
+                text-align: center
+            p
+                text-align: center
+            img
+                margin-left: 14px
+        hr
+            margin-top: 60px
+    
+        
 
 /*features-2-section building*/
 .features-2-section
@@ -149,7 +227,7 @@ a
             left: -365px
         
         h2
-            margin-bottom: 12px
+            margin-bottom: 20px
         p
             font-weight: 300
             color: $mediumgrey
@@ -164,12 +242,33 @@ a
                     margin-bottom: 16px
                     align-items: center
                     /*initializing additional flex elements for custom list bullets (list-style-image don't looks cool)*/
-                    .custom-bullet             
+                    .custom-bullet            
                         width: 15px
                         height: 15px
                         margin-right: 20px
                         background-image: url('../img/icons/list-markers/marker2.png')
-
+@include boot-strap-lg
+        .features-2-section
+            .container
+                #second-p
+                    margin-top: 15px
+                #iphones-2
+                    display: none
+                #features-2-section-list
+                    li
+                        margin: auto auto 16px auto
+@include small-size-smartphone
+        .features-2-section
+            padding-top: 60px
+            padding-bottom: 90px
+            .container
+                text-align: center
+                #features-2-section-list
+                    li
+                        justify-content: center   
+                        .custom-bullet
+                            display: none
+                            
 /*Carousel1 section building*/
 .carousel-section
     padding-top: 120px
@@ -189,6 +288,9 @@ a
                 &-prev-1,&-next-1
                     display: none
 // INSERT HERE RULES FOR HIDDEN BLOCK WITH IMAGES
+@include small-size-smartphone
+    .carousel-section
+        padding-top: 60px
 /*pricing section building*/
 .pricing-section
     .first
@@ -204,8 +306,9 @@ a
         margin-top: 80px
         margin-bottom: 120px
         .price-block
+            width: 255px
             background: $lightgrey
-            text-align: center
+            text-align: center     
             &-name
                 display: block
                 padding-top: 14px
@@ -263,7 +366,15 @@ a
                 border-radius: 50px
                 text-decoration: none
                 color: $darkgrey
-
+        @include medium-widescreen-laptop
+            .price-block
+                margin: 20px auto  
+@include small-size-smartphone
+    .pricing-section
+        .first
+            margin-top: 60px
+        .second
+            margin-bottom: 60px
 /*video section building*/
 .big-video-section
     #video-container
@@ -273,6 +384,9 @@ a
         height: 400px
         background: $darkgrey
         background: url("../img/backgrounds/video-overlay.png")
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
         a
             transition: 0.3s
             &:hover
@@ -281,11 +395,14 @@ a
                 -o-transform: translate(0px, -5px)
                 -ms-transform: translate(0px, -5px)
                 transform: translate(0px, -5px)
+    @include medium-size-tablet
+        #video-container
+            height: 200px
 
 /*carousel2 section building*/
 .reviews-section
     padding-top: 120px
-    padding-bottom: 76px //120px-(.owl-stage (default height)-(custom height) = 44px) 
+    padding-bottom: 120px-44px //120px-(.owl-stage (default height)-(custom height) = 44px) 
     background: $white
     h2
         text-align: center
@@ -297,6 +414,7 @@ a
         color: $mediumgrey
     .owl-carousel
         &__item
+            width: 360px
             padding: 40px
             background: $lightgrey
             p
@@ -316,6 +434,20 @@ a
                     .name
                         font-family: 'dosis', sans-serif
                         font-size: $reviews_name
+        @include medium-widescreen-laptop
+            .owl-carousel__item:hover    
+                background: $white
+                -webkit-box-shadow: 0px 20px 50px -22px rgba(0,0,0,0.23)
+                -moz-box-shadow: 0px 20px 50px -22px rgba(0,0,0,0.23)
+                box-shadow: 0px 20px 50px -22px rgba(0,0,0,0.23)
+@include small-size-smartphone
+    .reviews-section
+        padding-top: 80px
+        padding-bottom: 60px
+        p
+            margin-top: 40px
+            margin-bottom: 50px
+
 
 /*Download section building*/
 .download-section
@@ -328,11 +460,14 @@ a
         color: $white
     .download-item
         display: flex
+        height: 113px
         justify-content: space-between
         align-items: center
         background: $white
         text-decoration: none
         .download-image-container
+            height: 113px
+            width: 113px
             align-self: stretch
             background: $lightgrey
             img
@@ -347,11 +482,31 @@ a
                 font-weight: 600
                 font-family: 'dosis', sans-serif
                 padding-bottom: 7px
-                color: $darkgrey
-                
+                color: $darkgrey       
             span
                 color: $mediumgrey
                 font-weight: 300
+    @include boot-strap-xl
+        .download-item
+            justify-content: center
+            margin-bottom: 15px
+            .download-description
+                margin-left: 25%
+    @include boot-strap-sm
+        .download-item
+            height: 90px
+            .download-image-container
+                height: 90px
+                width: 75px
+                img
+                    width: 100%
+            .download-description
+                margin-left: 5%
+                font-size: 0.6em
+@include small-size-smartphone
+    .download-section
+        padding-top: 80px
+        padding-bottom: 60px
 
 /*footer building*/
 footer
@@ -383,4 +538,5 @@ footer
     p
         padding-bottom: 60px
         margin-right: 25px
+        text-align: center
     

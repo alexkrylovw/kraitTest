@@ -166,12 +166,34 @@ $("#carousel-next-1").click(function(){
 
 //////////////////////////////
 ///Slider section 2 (owl.carousel.js)
-//settings
+//settings & responsive
 $(".owl-carousel").owlCarousel({
-    items: 3,
     loop: true,
     margin: 30,
     nav: true,
     center: true,
-    dots: false
+    dots: false,
+    responsive: {
+      0: {
+          items: 1,
+          margin: 0,
+          center: false
+      },
+
+      975: {
+          items: 2,
+          margin: 15,
+          center: false
+      },
+    
+      1350: {
+          items: 3
+      }  
+    }
+});
+
+/////Responsive top navigation menu
+//event listener (onclick)
+$("#burger_button").click(function(event){
+    $("nav").animate({height: 'toggle'}, 200);
 });

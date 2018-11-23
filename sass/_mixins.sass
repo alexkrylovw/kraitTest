@@ -8,11 +8,39 @@
     background: linear-gradient(to right, $body-bg-gradient-orange 0%,$body-bg-gradient-pink 100%)
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#{$body-bg-gradient-orange}, endColorstr=#{$body-bg-gradient-pink})
 
-//Media queries
+////Media queries
+
+//custom sizes
 @mixin medium-widescreen-desktop
-    @media (max-width: 1625px)
+    @media screen and (max-width: 1625px)
         @content
 
 @mixin medium-widescreen-laptop
-    @media (max-width: 1200px)
+    @media screen and (max-width: 1350px)
         @content
+
+@mixin medium-size-tablet
+    @media screen and (max-width: 975px)
+        @content
+
+@mixin small-size-smartphone
+    @media screen and (max-width: 445px)
+        @content
+
+//bootstrap defaults
+@mixin boot-strap-xl
+    @media screen and (max-width: 1200px)
+        @content
+
+@mixin boot-strap-lg
+    @media screen and (max-width: 992px)
+        @content
+
+@mixin boot-strap-md
+    @media screen and (max-width: 768px)
+        @content
+
+@mixin boot-strap-sm
+    @media screen and (max-width: 576px)
+        @content
+

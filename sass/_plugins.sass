@@ -74,3 +74,21 @@
                 left: -90px
             .owl-next
                 right: -90px
+    @include medium-widescreen-laptop
+        .owl-carousel
+            width: 745px
+    @include medium-size-tablet
+        .owl-carousel
+            width: 745px-360px-30px//(laptop width - 1 item width - margin from js file *2)
+    @include boot-strap-sm
+        .owl-carousel
+            .owl-nav
+                .owl-prev, .owl-next
+                    top: 0px
+                .owl-prev
+                    left: 100px
+                .owl-next
+                    right: 100px
+
+
+
