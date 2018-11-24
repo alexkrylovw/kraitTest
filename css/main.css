@@ -324,7 +324,7 @@ a {
   }
   .top-section .top-section-menu ul li #header-download-link:hover {
     background: none;
-    color: none;
+    color: #fff;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
